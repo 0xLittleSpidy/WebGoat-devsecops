@@ -1,0 +1,12 @@
+name: security Pipeline
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+jobs:
+  my_job:
+    name: deploy to ubuntu
+    runs-on: ubuntu-22.04
